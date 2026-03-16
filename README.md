@@ -69,4 +69,4 @@ The output will be in the `dist` folder.
 - **Instagram**: [@rajsaraiya009](https://www.instagram.com/rajsaraiya009)
 
 ---
-Designed and Developed with ❤️ for Raj Saraiya.
+Designed and Developed with ❤️ from Raj Saraiya.
