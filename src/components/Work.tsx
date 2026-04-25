@@ -3,36 +3,37 @@ import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
+const basePath = import.meta.env.BASE_URL;
 const projects = [
   {
     title: "MoneyX AI Transformation",
     category: "Fintech AI & Data Science",
     tools: "ML Segmentation, Behavioral Profiling, LLM Extraction",
-    image: "/images/MoneyX.png",
+    image: `${basePath}images/MoneyX.png`,
   },
   {
     title: "License Plate detection",
     category: "Deep Learning / Computer Vision",
     tools: "CNN, Object Detection, OCR, JPJ Malaysia",
-    image: "/images/JPJ.png",
+    image: `${basePath}images/JPJ.png`,
   },
   {
     title: "Automated MyKad OCR",
     category: "Computer Vision / Automation",
     tools: "Deep Learning, Image Recognition, FastAPI",
-    image: "/images/MyKad.png",
+    image: `${basePath}images/MyKad.png`,
   },
   {
     title: "Real-Time Analytics Dashboards",
     category: "Snowflake Innovation Award",
     tools: "Snowflake, Streamlit, Predictive KPIs",
-    image: "/images/Snowflake.png",
+    image: `${basePath}images/Snowflake.png`,
   },
   {
     title: "eKYC Image Classification",
     category: "Deep Learning / Privacy",
     tools: "CNN, Keras, TensorFlow, High-Precision Verification",
-    image: "/images/eKYC.png",
+    image: `${basePath}images/eKYC.png`,
   },
 ];
 

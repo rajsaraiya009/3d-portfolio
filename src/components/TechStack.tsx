@@ -12,20 +12,21 @@ import {
 } from "@react-three/rapier";
 
 const textureLoader = new THREE.TextureLoader();
+const basePath = import.meta.env.BASE_URL;
 const imageUrls = [
-  "/images/python_logo.png",
-  "/images/tensorflow_logo.png",
-  "/images/pytorch_logo.png",
-  "/images/scikit_learn_logo.png",
-  "/images/fastapi_logo.png",
-  "/images/streamlit_logo.png",
-  "/images/postgresql_logo.png",
-  "/images/mongo.webp",
-  "/images/pandas_logo.png",
-  "/images/tableau_logo.png",
-  "/images/powerbi_logo.png",
-  "/images/nlp_icon.png",
-  "/images/Snowflake.png",
+  `${basePath}images/python_logo.png`,
+  `${basePath}images/tensorflow_logo.png`,
+  `${basePath}images/pytorch_logo.png`,
+  `${basePath}images/scikit_learn_logo.png`,
+  `${basePath}images/fastapi_logo.png`,
+  `${basePath}images/streamlit_logo.png`,
+  `${basePath}images/postgresql_logo.png`,
+  `${basePath}images/mongo.webp`,
+  `${basePath}images/pandas_logo.png`,
+  `${basePath}images/tableau_logo.png`,
+  `${basePath}images/powerbi_logo.png`,
+  `${basePath}images/nlp_icon.png`,
+  `${basePath}images/Snowflake.png`,
 ];
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
@@ -204,7 +205,7 @@ const TechStack = () => {
           ))}
         </Physics>
         <Environment
-          files="/models/char_enviorment.hdr"
+          files={`${basePath}models/char_enviorment.hdr`}
           environmentIntensity={0.5}
           environmentRotation={[0, 4, 2]}
         />

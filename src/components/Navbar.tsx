@@ -8,6 +8,7 @@ import "./styles/Navbar.css";
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 export let smoother: ScrollSmoother;
 
+const basePath = import.meta.env.BASE_URL;
 const Navbar = () => {
   useEffect(() => {
     smoother = ScrollSmoother.create({
@@ -42,7 +43,7 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        <a href="/#" className="navbar-title" data-cursor="disable">
+        <a href={basePath} className="navbar-title" data-cursor="disable">
           RS
         </a>
         <a
