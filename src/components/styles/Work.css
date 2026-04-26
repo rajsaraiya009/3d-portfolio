@@ -274,10 +274,19 @@
   .carousel-content {
     flex-direction: column;
     gap: 30px;
+    text-align: left;
   }
 
   .carousel-info {
     width: 100%;
+    gap: 15px; /* Reduced gap */
+    flex-direction: column; /* Stack index and details on mobile */
+  }
+
+  .carousel-number h3 {
+    font-size: 40px;
+    opacity: 0.5;
+    margin-bottom: -10px; /* Bring it closer to title but not overlapping */
   }
 
   .carousel-image-wrapper {
@@ -291,11 +300,11 @@
   }
 
   .carousel-arrow-left {
-    left: 10px;
+    left: 5px;
   }
 
   .carousel-arrow-right {
-    right: 10px;
+    right: 5px;
   }
 }
 
@@ -307,18 +316,20 @@
   .work-section h2 {
     font-size: 40px;
     margin-bottom: 30px;
+    padding: 0 20px;
   }
 
   .carousel-number h3 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .carousel-details h4 {
-    font-size: 20px;
+    font-size: 24px; /* Slightly larger for readability */
   }
 
   .carousel-content {
     gap: 20px;
+    padding: 0 20px;
   }
 
   .carousel-slide {
@@ -326,6 +337,8 @@
   }
 
   .work-image img {
-    max-height: 250px;
+    max-height: 300px; /* Larger on mobile */
+    width: 100%;
+    object-fit: cover;
   }
 }

@@ -106,8 +106,7 @@
 }
 
 .character-model {
-  height: 80%;
-  height: 80vh;
+  height: 60vh; /* Reduced for mobile */
   position: absolute;
   max-width: 1920px;
   max-height: 1080px;
@@ -115,7 +114,7 @@
   width: 100%;
   left: 50%;
   z-index: 0;
-  bottom: 50px;
+  bottom: 80px; /* Adjusted position */
   pointer-events: inherit;
 }
 
@@ -262,6 +261,40 @@ h2.landing-info-h2 {
   );
   bottom: -5px;
   left: 0;
+}
+
+/* Mobile Overlap Fix */
+@media screen and (max-width: 768px) {
+  .landing-intro h1 {
+    font-size: 50px !important;
+    line-height: 45px !important;
+  }
+  
+  .landing-info h2 {
+    font-size: 28px !important;
+    line-height: 32px !important;
+    margin-left: 0 !important;
+  }
+
+  h2.landing-info-h2 {
+    font-size: 32px !important;
+    width: 100%;
+    margin-top: 10px !important;
+  }
+
+  .landing-h2-1, .landing-h2-2, .landing-h2-info, .landing-h2-info-1 {
+    position: relative !important; /* Stack them instead of overlap on mobile */
+    top: auto !important;
+  }
+  
+  .landing-info {
+    text-align: center;
+    width: 100%;
+    right: 0;
+    transform: none;
+    left: 0;
+    bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 500px) {
