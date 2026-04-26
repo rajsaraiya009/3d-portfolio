@@ -304,13 +304,13 @@ h2.landing-info-h2 {
   }
 
   .landing-info {
-    position: relative !important;
+    position: absolute !important;
     text-align: center;
     width: 100%;
-    bottom: auto !important;
+    bottom: 40px !important; /* Place it at the bottom, below the character face */
     left: 0 !important;
     right: 0 !important;
-    top: 0 !important;
+    top: auto !important;
     transform: none !important;
     display: flex !important;
     flex-direction: column;
