@@ -361,21 +361,22 @@
     width: 36px;
     height: 36px;
     font-size: 16px;
-    top: auto;
-    bottom: -60px; /* Move arrows below the content to avoid covering text */
-    transform: none;
+    top: auto !important;
+    bottom: -10px !important; /* Move arrows below the slide content */
+    transform: none !important;
+    z-index: 20;
   }
 
   .carousel-arrow-left {
-    left: 25%;
+    left: 20% !important;
   }
 
   .carousel-arrow-right {
-    right: 25%;
+    right: 20% !important;
   }
 
   .carousel-dots {
-    margin-top: 80px; /* Space for arrows */
+    margin-top: 30px; /* Space for arrows */
   }
 
   .work-image img {

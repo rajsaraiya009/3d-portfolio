@@ -106,7 +106,8 @@
 }
 
 .character-model {
-  height: 60vh; /* Reduced for mobile */
+  height: 60vh;
+  /* Reduced for mobile */
   position: absolute;
   max-width: 1920px;
   max-height: 1080px;
@@ -114,7 +115,8 @@
   width: 100%;
   left: 50%;
   z-index: 0;
-  bottom: 80px; /* Adjusted position */
+  bottom: 80px;
+  /* Adjusted position */
   pointer-events: inherit;
 }
 
@@ -254,11 +256,9 @@ h2.landing-info-h2 {
   width: 100%;
   height: 60%;
   z-index: 3;
-  background-image: linear-gradient(
-    0deg,
-    var(--backgroundColor) 0%,
-    transparent 100%
-  );
+  background-image: linear-gradient(0deg,
+      var(--backgroundColor) 0%,
+      transparent 100%);
   bottom: -5px;
   left: 0;
 }
@@ -270,7 +270,8 @@ h2.landing-info-h2 {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 80px; /* Space for the header */
+    padding-top: 80px;
+    /* Space for the header */
   }
 
   .landing-intro {
@@ -289,7 +290,9 @@ h2.landing-info-h2 {
   }
 
   /* Hide the split/animated background titles on mobile to avoid mess */
-  .landing-h2-2, .landing-h2-info, .landing-h2-info-1 {
+  .landing-h2-2,
+  .landing-h2-info,
+  .landing-h2-info-1 {
     display: none !important;
   }
 
@@ -307,7 +310,8 @@ h2.landing-info-h2 {
     position: absolute !important;
     text-align: center;
     width: 100%;
-    bottom: 40px !important; /* Place it at the bottom, below the character face */
+    bottom: 180px !important;
+    /* Place it at the bottom, below the character face */
     left: 0 !important;
     right: 0 !important;
     top: auto !important;
@@ -324,6 +328,16 @@ h2.landing-info-h2 {
     letter-spacing: 3px !important;
     opacity: 0.8 !important;
     text-transform: uppercase;
+    text-align: center !important;
+  }
+
+  /* RESET base styles that push text off-screen */
+  .landing-info h2, h2.landing-info-h2 {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    text-align: center !important;
   }
 }
 
