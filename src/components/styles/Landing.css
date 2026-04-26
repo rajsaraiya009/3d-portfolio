@@ -265,21 +265,27 @@ h2.landing-info-h2 {
 
 /* Mobile Overlap Fix */
 @media screen and (max-width: 768px) {
-  .landing-intro h1 {
-    font-size: 50px !important;
-    line-height: 45px !important;
+  .landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 80px; /* Space for the header */
   }
-  
-  .landing-info h2 {
-    font-size: 28px !important;
-    line-height: 32px !important;
-    margin-left: 0 !important;
+
+  .landing-intro {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .landing-intro h1 {
-    font-size: 50px !important;
-    line-height: 50px !important;
-    margin-bottom: 10px !important;
+    font-size: 45px !important;
+    line-height: 48px !important;
+    margin-bottom: 5px !important;
   }
 
   /* Hide the split/animated background titles on mobile to avoid mess */
@@ -289,11 +295,12 @@ h2.landing-info-h2 {
 
   .landing-h2-1 {
     position: relative !important;
-    font-size: 20px !important;
+    font-size: 22px !important;
     opacity: 1 !important;
     color: var(--accentColor) !important;
     letter-spacing: 2px !important;
     display: block !important;
+    margin-top: 5px !important;
   }
 
   .landing-info {
@@ -303,19 +310,20 @@ h2.landing-info-h2 {
     bottom: auto !important;
     left: 0 !important;
     right: 0 !important;
-    top: 10px !important; /* Move it up under the name */
+    top: 0 !important;
     transform: none !important;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     z-index: 10;
   }
 
   .landing-info h3 {
-    font-size: 16px !important;
+    font-size: 14px !important;
     margin: 0 !important;
     letter-spacing: 3px !important;
     opacity: 0.8 !important;
+    text-transform: uppercase;
   }
 }
 
